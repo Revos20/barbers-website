@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>barber shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylsheet" href= "C:\Users\SOOQ ELASER\OneDrive\Desktop">
+">
+
+    <!inatolewa kwa font awesome 4 cdn>
+
+    <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">"
+</head>
+<body>
+    <section id="banner">
+        <img src="data:image/jpeg;base64,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">
+        <div class="banner-text">
+            <h1>Georges Barber Shop</h1>
+            <p>Style your hair is style your life</p>
+            <div class="banner-btn">
+                <a href="#"><span></span>Find Out</a>
+                <a href="#"><span></span>Read More</a>
+            </div>
+        </div>
+    </section>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">TESTIMONIALS</a></li>
+                <li><a href="#">MEET US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-3WqcMb1jpsXuptT-PGfgWxYKpyUmqDKCASKOabcrx1UGJnYEdiWQR0HxkfbOIVxd8aI&usqp=CAU" id="menu">
+    </div>
+
+
+    <!-----features------>
+
+
+    <section id="feature" >
+        <div class="title-text">
+            <p>FEATURE</p>
+            <h1>Why choose us</h1>
+        </div>
+        <div class="feature-box">
+            <div class="features">
+                <h1>Experienced staff</h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-shield"></i>
+                    <!inatolewa kwa font awesome 4 icon>
+                    </div>
+                     <div class="feature-text">
+                     <p>The staff crew is trained in different institutions all over the globe  ,therefore they are equiped with skills.</p>
+                     </div>
+                 </div>
+                 <h1>pre booking online</h1>
+                 <div class="features-desc">
+                     <div class="feature-icon">
+                         <i class="fa fa-check-square-o"></i>
+                     <!inatolewa kwa font awesome 4 icon>
+                     </div>
+                      <div class="feature-text">
+                      <p>You can book your session earlier in our website to avoid conjestion in our main shop<br>This will reduce the conjestion and make work easier for the proffesionals</b></p>
+                      </div>
+                  </div>
+                  <h1>Affordable Cost</h1>
+                  <div class="features-desc">
+                      <div class="feature-icon"> 
+                          <i class="fa fa-inr"></i>
+                      <!inatolewa kwa font awesome 4 icon>
+                      </div>
+                       <div class="feature-text">
+                       <p>We consider the state of the country therefore our price is fair and any financial group can fit in.</p>
+                       </div>
+                   </div>
+            </div>
+            <div class="features-img">
+                <img src="https://i.pinimg.com/736x/88/34/ce/8834ceca586c1a1e2a63cd96150da449.jpg">
+
+        </div>
+    </section>
+
+    <!----service----->
+
+
+    <section id="service">
+        <div class="title-text">
+            <p>SERVICES</p>
+            <h1>We Provide Better</h1>
+            
+        </div> 
+        <div class="service-box">
+           <div class="single service">
+            <img src="images/pic-1.jpg">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Hair Styling</h3>
+                <hr>
+               <p>this is test under descriptoon of barber foundation this is test under description of barber foundation</p>
+            </div>
+         </div>  
+          <div class="single service">
+            <img src="images/pic-2.jpg">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Beard Trim</h3>
+                <hr>
+               <p>this is test under descriptoon of barber foundation this is test under description of barber foundation</p>
+            </div>
+           </div> 
+           <div class="single service">
+            <img src="images/pic-3.jpg"> 
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Hair Cut</h3>
+                <hr>
+               <p>this is test under descriptoon of barber foundation this is test under description of barber foundation</p>
+            </div>
+           </div> 
+           <div class="single service">
+            <img src="images/pic-4.jpg">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Dry shampoo</h3>
+                <hr>
+               <p>this is test under descriptoon of barber foundation this is test under description of barber foundation</p>
+            </div>
+           </div> 
+        </div>
+
+
+        <!--testimonial-->
+
+    </section>
+    <script>
+     var menuBtn=document.getElementById("menuBtn")
+     var sidenav=document.getElementById("sidenav")
+    var menu=document.getElementById("menu")
+    sidenav.style.right="-250px";
+
+    menuBtn.onclick=function(){
+        if (sidenav.style.right=="-250px"){
+            sidenav.style.right="0";
+            menu.src="images/close.png";
+        }
+        else{
+            sidenav.style.right="-250px";
+            menu.src="images/menu.png";  
+        }
+    }
+
+    </script>
+    
+</body>
+</html>
