@@ -1,278 +1,165 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'poppins', sans-serif;
-}
-#banner{
-    background:linear-gradient(rgba(0,0,0,0.5),#009688), url(data:image/jpeg;base64,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);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-}
-.logo{
-    width: 140px;
-    position: absolute;
-    top: 4%;
-    left: 10%;
-}
-.banner-text{
-    text-align: center;
-    color: #fff;
-    padding-top: 180px;
-}
-.banner-text h1{
-    font-size: 130px;
-    font-family: "Kaushan Script", cursive;
-}
-.banner-text p{
-    font-size: 20px;
-    font-style: italic;
-}
-.banner-btn{
-    margin: 70px auto 0;
-}
-.banner-btn a{
-    width: 150px;
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 10px;
-    padding: 12px 0;
-    color: #fff;
-    border: .5px solid #fff;
-    position: relative;
-    z-index: 1;
-    transition:color 0.5s;
-}
-.banner-btn a span{
-    width: 0%;
-    height: 100%;
-    position:absolute;
-    top: 0;
-    left: 0;
-    background: #fff;
-    z-index: -1;
-    transition: 0.5s;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>barber shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylsheet" href= "C:\Users\SOOQ ELASER\OneDrive\Desktop">
+">
 
-}
-.banner-btn a:hover span{
-    width: 100%;
-}
-.banner-btn a:hover{
-    color: blue;
-}
-#sidenav{
-    width: 250px;
-    height: 100vh;
-    position: fixed;
-    right: -250px;
-    top: 0;
-    background: green;
-    z-index: 2;
-    transition: 0.5s;
-}
-nav ul li{
-    list-style: none;
-    margin:50px 20px;
-}
-nav ul li a{
-    text-decoration: none;
-    color: #fff;
-}
-#menuBtn{
-    width: 50px;
-    height: 50px;
-    background: #009688;
-    text-align: center;
-    position: fixed;
-    right: 30px;
-    top: 20px;
-    border-radius: 3px;
-    z-index: 3;
-    cursor: pointer;
-}
-#menuBtn img{
-    width: 20px;
-    margin-top: 15px;
-}
-@media screen and(max-width: 770px){
-    .banner-text h1{
-        font-size: 44px;
-    }
-      .banner-btn a{
-        display: block;
-        margin: 20px auto;
-      }  
-}
+    <!inatolewa kwa font awesome 4 cdn>
+
+    <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">"
+</head>
+<body>
+    <section id="banner">
+        <img src="data:image/jpeg;base64,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">
+        <div class="banner-text">
+            <h1>Georges Barber Shop</h1>
+            <p>Style your hair is style your life</p>
+            <div class="banner-btn">
+                <a href="#"><span></span>Find Out</a>
+                <a href="#"><span></span>Read More</a>
+            </div>
+        </div>
+    </section>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">TESTIMONIALS</a></li>
+                <li><a href="#">MEET US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-3WqcMb1jpsXuptT-PGfgWxYKpyUmqDKCASKOabcrx1UGJnYEdiWQR0HxkfbOIVxd8aI&usqp=CAU" id="menu">
+    </div>
 
 
-/--feature--/
+    <!-----features------>
 
 
-#feature{
-    width: 100%;
-    padding: 70px 0;
+    <section id="feature" >
+        <div class="title-text">
+            <p>FEATURE</p>
+            <h1>Why choose us</h1>
+        </div>
+        <div class="feature-box">
+            <div class="features">
+                <h1>Experienced staff</h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-shield"></i>
+                    <!inatolewa kwa font awesome 4 icon>
+                    </div>
+                     <div class="feature-text">
+                     <p>The staff crew is trained in different institutions all over the globe  ,therefore they are equiped with skills.</p>
+                     </div>
+                 </div>
+                 <h1>pre booking online</h1>
+                 <div class="features-desc">
+                     <div class="feature-icon">
+                         <i class="fa fa-check-square-o"></i>
+                     <!inatolewa kwa font awesome 4 icon>
+                     </div>
+                      <div class="feature-text">
+                      <p>You can book your session earlier in our website to avoid conjestion in our main shop<br>This will reduce the conjestion and make work easier for the proffesionals</b></p>
+                      </div>
+                  </div>
+                  <h1>Affordable Cost</h1>
+                  <div class="features-desc">
+                      <div class="feature-icon"> 
+                          <i class="fa fa-inr"></i>
+                      <!inatolewa kwa font awesome 4 icon>
+                      </div>
+                       <div class="feature-text">
+                       <p>We consider the state of the country therefore our price is fair and any financial group can fit in.</p>
+                       </div>
+                   </div>
+            </div>
+            <div class="features-img">
+                <img src="https://i.pinimg.com/736x/88/34/ce/8834ceca586c1a1e2a63cd96150da449.jpg">
 
-}
-.title-text{
-    text-align: center;
- padding-bottom: 70px;
+        </div>
+    </section>
 
-}
-.title-text p{
-    margin:auto;
-    font-size: 20px;
-    color: pink;
-    font-weight: bold;
-    position: relative; 
-    z-index: 1;
-    display: inline-block;
-}
-.title-text p::after{
-    content: '';
-    width: 50px;
-    height: 35px;
-    background: linear-gradient(#019587,#fff);
-    position: absolute;
-    top: -20px;
-    left: 0;
-    z-index: -1;
-    transform: rotate(10deg);
-    border-top-left-radius: 35px;
-    border-bottom-right-radius: 35px;
-}
-.title-text h1{
-    font-size: 50px;
-}
-.feature-box{
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-}
-.features{
-    flex-basis: 50%;
+    <!----service----->
 
-}
-.features-img{
-    flex-basis: 50%;
-    margin: auto;
-}
-.features-img img{
-    width: 70%;
-    border-radius: 10px;
-}
-.features h1{
-    text-align: left;
-    margin-bottom: 10px;
-    font-weight: 100;
-    color: #009688;
-}
-.features-desc{
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
 
-}
-.feature-icon.fa{
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
-    line-height: 50px;
-    border-radius: 8px;
-    color: #009688;
-    border: 1px  solid #009688;
+    <section id="service">
+        <div class="title-text">
+            <p>SERVICES</p>
+            <h1>We Provide Better</h1>
+            
+        </div> 
+        <div class="service-box">
+           <div class="single service">
+            <img src="images/pic-1.jpg">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Hair Styling</h3>
+                <hr>
+               <p>this is test under descriptoon of barber foundation this is test under description of barber foundation</p>
+            </div>
+         </div>  
+          <div class="single service">
+            <img src="images/pic-2.jpg">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Beard Trim</h3>
+                <hr>
+               <p>this is test under descriptoon of barber foundation this is test under description of barber foundation</p>
+            </div>
+           </div> 
+           <div class="single service">
+            <img src="images/pic-3.jpg"> 
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Hair Cut</h3>
+                <hr>
+               <p>this is test under descriptoon of barber foundation this is test under description of barber foundation</p>
+            </div>
+           </div> 
+           <div class="single service">
+            <img src="images/pic-4.jpg">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Dry shampoo</h3>
+                <hr>
+               <p>this is test under descriptoon of barber foundation this is test under description of barber foundation</p>
+            </div>
+           </div> 
+        </div>
 
-}
-.feature-text{
-    padding: 0 20px;
-    text-align: initial;
 
-}
-@media screen and(max-width: 770px){
-    .title-text h1{
-        font-size: 35px;
-    }
-    .features{
-        flex-basis:100%;
-    }
-    .features-img{
-        flex-basis: 100%;
-    }
-    .features-img img{
-        width: 100%;
-    }
+        <!--testimonial-->
+
+    </section>
+    <script>
+     var menuBtn=document.getElementById("menuBtn")
+     var sidenav=document.getElementById("sidenav")
+    var menu=document.getElementById("menu")
+    sidenav.style.right="-250px";
+
+    menuBtn.onclick=function(){
+        if (sidenav.style.right=="-250px"){
+            sidenav.style.right="0";
+            menu.src="images/close.png";
+        }
+        else{
+            sidenav.style.right="-250px";
+            menu.src="images/menu.png";  
+        }
     }
 
-
-   /* -----service--*/
-
-   #service{
-    width: 100%;
-    padding: 70px 0;
-    background: #efefef;
-
-   }
-   .service-box{
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: auto;
-
-   }
-
-   .single-service{
-    flex-basis: 48%;
-    text-align: center;
-    border-radius: 7px;
-    margin-bottom: 20px;
-    color: #fff;
-    position: relative;
-
-   }
-
-   .single-service img{
-    width: 100%;
-    border-radius: 7px;
-
-   }
-   .overlay{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    border-radius: 7px;
-    cursor: pointer;
-    background: linear-gradient(rgba(0,0,0,0.5),#009688);
-    opacity: 0;
-   transition: 1s;
-   }
-   .single-service :hover .overlay{
-    opacity: 1;
-   }
-   .service-desc{
-     width: 88%;
-     position: absolute;
-     bottom: 40%;
-     left: 50%;
-     opacity: 0;
-     transform: translateX(-50%);
-     transition: 1s;
-} 
-hr{
-    background: #fff;
-    height:2px;
-    border: 0;
-    margin: 15px auto;
-    width:60%
-
-}
-   .service-desc p{
-    font-size: 14px; 
-   }
-   .single-service :hover .service-desc{
-    bottom: 40%;
-    opacity: 1;
-   }
+    </script>
+    
+</body>
+</html>
